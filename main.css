@@ -1,0 +1,22 @@
+.ml-1{
+  margin-left: 1em;
+}
+.ml-2{
+  margin-left: 2em;
+}
+.ml-3{
+  margin-left: 3em;
+}
+
+.ml-4{
+  margin-left: 4em;
+}
+
+.ml-5{
+  margin-left: 5em;
+}
+
+.img{
+  background-color: rgba(0,0,0,0.5);
+  border: 2px #ff0000 solid;
+}

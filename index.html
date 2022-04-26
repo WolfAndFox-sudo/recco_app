@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="js" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>アルゴリズム（ソート）</title>
+    <script src="main.js"></script>
+    <link type="text/css" href="main.css"  rel="stylesheet" />
+  </head>
+  <body>
+    <h1>アルゴリズムを図で学ぼう！</h1>
+
+    <h2 class="ml-1">・アプリケーションの紹介</h2>
+    <div class="ml-5">
+      <h3>アプリ名：アルゴリズム図鑑</h3>
+      <img alt="app-icon" src="./img/app.png" class="img">
+      <p>このアプリは持ち歩くことが<br>出来るアルゴリズム図鑑です！</p>
+    </div>
+    <script>
+      //show() : 配列の中身を見れる
+      //temp(a,b) : a番地とb番地に入っている値を入れ替える。
+      //reSet() : 配列の中身を初期化
+      //reLength() : 配列のlengthを返す
+
+      //バブルソート
+      function BubbleSort(){
+        show();
+        for(var i = retLength(); i > 0; i--){
+          for(var j = 0; j < i - 1; j++){
+            if(data[j] > data[j + 1]){
+              temp(j, j+1);
+            }
+          }
+        }
+        show();
+        reSet();
+      }
+      //選択ソート
+      function SelectionSort(){
+        show();
+        for(var i = 0; i < retLength(); i++){
+          var min = i;
+          for(var j = i + 1; j < retLength(); j++){
+            if(data[min] > data[j]){
+              min = j;
+            }
+          }
+          temp(min, i);
+        }
+        show();
+        reSet();
+      }
+      //挿入ソート
+      function InsertionSort(){
+        show();
+        for(var i = 1; i < retLength(); i++){
+          var j = i;
+          while(data[j - 1] > data[j]){
+            temp(j - 1, j);
+            if( j > 1){
+              j--;
+            }
+          }
+        }
+        show();
+        reSet();
+      }
+
+    </script>
+  </body>
+</html>
